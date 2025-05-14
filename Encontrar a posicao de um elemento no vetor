@@ -1,0 +1,27 @@
+// Encontrar a posicao de um elemento no vetor
+// Gabriel Russi
+
+#include <stdio.h>
+
+int main() {
+    int vetor[5] = {10, 20, 30, 40, 50};
+    int num, i, posicao = -1;
+
+    printf("Digite um numero para buscar no vetor: ");
+    scanf("%d", &num);
+
+    for (i = 0; i < 5; i++) {
+        if (vetor[i] == num) {
+            posicao = i;
+            break;
+        }
+    }
+
+    if (posicao != -1) {
+        printf("O numero %d esta na posicao %d do vetor.\n", num, posicao);
+    } else {
+        printf("O numero %d nao foi encontrado no vetor.\n", num);
+    }
+
+    return 0;
+}
