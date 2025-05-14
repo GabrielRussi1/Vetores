@@ -1,0 +1,19 @@
+// Contando numeros maiores que 10
+// Gabriel Russi
+
+#include <stdio.h>
+
+int main() {
+    int vetor[5] = {5, 12, 8, 15, 7};
+    int i, contagem = 0;
+
+    for (i = 0; i < 5; i++) {
+        if (vetor[i] > 10) {
+            contagem++;
+        }
+    }
+
+    printf("O numero de elementos maiores que 10 no vetor e: %d\n", contagem);
+
+    return 0;
+}
