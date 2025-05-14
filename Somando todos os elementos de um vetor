@@ -1,0 +1,17 @@
+// Somando todos os elementos de um vetor
+// Gabriel Russi
+
+#include <stdio.h>
+
+int main() {
+    int vetor[5] = {10, 20, 30, 40, 50};
+    int i, soma = 0;
+
+    for (i = 0; i < 5; i++) {
+        soma += vetor[i];
+    }
+
+    printf("A soma de todos os elementos do vetor e: %d\n", soma);
+
+    return 0;
+}
